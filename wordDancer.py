@@ -2,10 +2,10 @@ import time
 import random as rd
 
 init_word = input("Palavra: ")
-spaces = 25
+spaces = 40
 
 def printWord(crt_word):
-    print(' '*50+crt_word)
+    print(' '*(90-spaces-round(len(init_word)/2))+crt_word)
     time.sleep(.02)
 
 def snake(repeat):
